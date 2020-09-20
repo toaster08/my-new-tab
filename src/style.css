@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Pinyon+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    background: #222;
+    color: rgb(218, 197, 152);
+}
+
+#container{
+    /*background: red;*/
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    /*background: green;*/
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    text-align: center;   
+}
+
+#clock{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 5rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+#quotes{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#author{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 1rem;
+}
