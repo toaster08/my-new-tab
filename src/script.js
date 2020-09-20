@@ -24,3 +24,23 @@ function timeChange(num){
 }
 
 currentTime();
+
+if(Cookies.get("color") == undefined){
+    Cookies.set("color", "dark");
+    document.querySelector("body").style.background = "#222";
+    document.querySelector("body").style.color = "rgb(218, 197, 152)";
+}
+
+window.addEventListener("keyup", function(e){
+    if(e.key == "ArrowRight" || e.key == "ArrowLeft"){
+        if(Cookies.get("color") == "light"){
+            Cookies.set("color", "dark");
+            document.querySelector("body").style.background = "#222";
+            document.querySelector("body").style.color = "rgb(218, 197, 152)";
+        }else{
+            Cookies.set("color", "light");
+            document.querySelector("body").style.background = "#fff";
+            document.querySelector("body").style.color = "#222";
+        }
+    }
+})
