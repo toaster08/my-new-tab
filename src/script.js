@@ -2,7 +2,7 @@ var clock = document.querySelector("#clock");
 var quotes = document.querySelector("#quotes");
 var author = document.querySelector("#author");
 
-fetch("http://api.quotable.io/random?maxLength=75")
+fetch("//api.quotable.io/random?maxLength=75")
     .then((resp) => resp.json())
     .then(function(data){
         quotes.innerText = '"' + data.content + '"';
