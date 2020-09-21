@@ -31,6 +31,11 @@ if(Cookies.get("color") == undefined){
     document.querySelector("body").style.color = "rgb(218, 197, 152)";
 }
 
+if(Cookies.get("color") == "light"){
+    document.querySelector("body").style.background = "#fff";
+    document.querySelector("body").style.color = "#222";
+}
+
 window.addEventListener("keyup", function(e){
     if(e.key == "ArrowRight" || e.key == "ArrowLeft"){
         if(Cookies.get("color") == "light"){
